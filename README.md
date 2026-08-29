@@ -9,7 +9,7 @@ Proyecto web interactivo desarrollado para la "ExpoCiencia 2026 Jaime Lora Jaram
 * `docs/`: Reporte investigativo y documentos académicos formateados bajo las normas ICONTEC, detallando las acciones de la comunidad STEM y los objetivos de conservación ambiental aplicados en la costa Caribe.
 
 ## Desarrollo
-Para compilar los estilos de Tailwind CSS en tiempo real mientras editas el código, ejecuta:
+Para compilar los estilos de Tailwind CSS en tiempo real mientras se edita el código, ejecutar:
 \`\`\`bash
 npx @tailwindcss/cli -i ./css/input.css -o ./css/styles.css --watch
 \`\`\`
