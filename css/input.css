@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Opcional: Colores personalizados para mantener la temática */
+@theme {
+  --color-canaguate: #fbbf24;
+  --color-tierra: #78350f;
+}
