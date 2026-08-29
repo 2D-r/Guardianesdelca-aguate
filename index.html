@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" id="html-root">
+<html lang="es" id="html-root" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 
     <div class="relative z-10">
 
-        <nav class="bg-green-600/90 backdrop-blur-md p-4 text-white shadow-lg sticky top-0 z-50">
+        <nav class="bg-green-600/90 backdrop-blur-md p-4 text-white shadow-lg sticky top-0 z-50 transition-all duration-300">
             <div class="container mx-auto flex justify-between items-center">
                 
                 <div class="flex items-center space-x-3">
@@ -33,13 +33,13 @@
 
                 <div class="flex items-center space-x-4">
                     <ul class="hidden md:flex space-x-6 font-bold text-sm">
-                        <li><a href="#estudiantes" class="hover:text-yellow-300 transition" data-es="Equipo" data-en="Team">Equipo</a></li>
-                        <li><a href="#problema" class="hover:text-yellow-300 transition" data-es="El Problema" data-en="The Problem">El Problema</a></li>
-                        <li><a href="#juego" class="hover:text-yellow-300 transition" data-es="🎮 Minijuego" data-en="🎮 Minigame">🎮 Minijuego</a></li>
-                        <li><a href="#crecimiento" class="hover:text-yellow-300 transition" data-es="Bitácora" data-en="Logbook">Bitácora</a></li>
-                        <li><a href="#descargas" class="hover:text-yellow-300 transition" data-es="Descargas" data-en="Downloads">Descargas</a></li>
+                        <li><a href="#estudiantes" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Equipo" data-en="Team">Equipo</a></li>
+                        <li><a href="#que-es" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Bomba de Vida" data-en="Life Bomb">Bomba de Vida</a></li>
+                        <li><a href="#juego" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="🎮 Minijuego" data-en="🎮 Minigame">🎮 Minijuego</a></li>
+                        <li><a href="#crecimiento" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Bitácora" data-en="Logbook">Bitácora</a></li>
+                        <li><a href="#descargas" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Descargas" data-en="Downloads">Descargas</a></li>
                     </ul>
-                    <button id="btn-idioma" onclick="cambiarIdioma()" class="bg-yellow-400 text-yellow-900 font-black px-3 py-1 rounded-full text-xs hover:bg-yellow-300 transition shadow">
+                    <button id="btn-idioma" onclick="cambiarIdioma()" class="bg-yellow-400 text-yellow-900 font-black px-3 py-1 rounded-full text-xs hover:bg-yellow-300 transition transform hover:scale-105 shadow">
                         EN / ES
                     </button>
                 </div>
@@ -55,62 +55,97 @@
             </p>
         </header>
 
-        <section id="estudiantes" class="py-10 px-4 bg-white/95 backdrop-blur-sm shadow-inner">
+        <section id="estudiantes" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner transition duration-500">
             <div class="container mx-auto max-w-6xl text-center">
                 <h3 class="text-3xl font-black text-green-700 mb-2" data-es="👥 Equipo de Investigadores (Grado 2°A)" data-en="👥 Research Team (Grade 2°A)">👥 Equipo de Investigadores (Grado 2°A)</h3>
                 <p class="text-gray-500 mb-8 text-sm" data-es="Estudiantes expositores del proyecto" data-en="Exhibiting students of the project">Estudiantes expositores del proyecto</p>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
-                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+                    
+                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                            <img src="/assets/img/miembros/eliad.jpg" alt="Eliad" class="w-full h-full object-cover">
+                        </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Espinosa Ochoa Eliad David</h4>
                     </div>
-                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
-                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+
+                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                            <img src="/assets/img/miembros/kamila.jpg" alt="Kamila" class="w-full h-full object-cover">
+                        </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Mendoza Tom Kamila Sofia</h4>
                     </div>
-                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
-                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+
+                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                            <img src="/assets/img/miembros/lucia.jpg" alt="Lucia" class="w-full h-full object-cover">
+                        </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Muños Madrid Lucia</h4>
                     </div>
-                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
-                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+
+                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center sm:col-span-2 lg:col-span-1">
+                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                            <img src="/assets/img/miembros/samuel.jpg" alt="Samuel" class="w-full h-full object-cover">
+                        </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Rodrigues Goez Samuel David</h4>
                     </div>
-                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center sm:col-span-2 lg:col-span-1">
-                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+
+                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center">
+                            <img src="/assets/img/miembros/antonella.jpeg" alt="Antonella" class="w-full h-full object-cover">
+                        </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Tarriba Gonzalez Antonella</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="que-is" class="py-12 px-4 max-w-5xl mx-auto transition duration-500">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="💣 ¿Qué es y Cómo se hace una Bomba de Vida?" data-en="💣 What is a Life Bomb and How is it Made?">💣 ¿Qué es y Cómo se hace una Bomba de Vida?</h3>
+                <p class="text-green-200 text-sm" data-es="Conoce nuestra innovadora solución tecnológica y natural" data-en="Learn about our innovative technological and natural solution">Conoce nuestra innovadora solución tecnológica y natural</p>
+            </div>
+
+            <div class="bg-white/95 backdrop-blur-sm border-4 border-green-500 rounded-3xl p-8 shadow-xl mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <span class="text-4xl">🌱</span>
+                    <h4 class="text-2xl font-black text-green-800" data-es="¿Qué es una Bomba de Vida?" data-en="What is a Life Bomb?">¿Qué es una Bomba de Vida?</h4>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-base" data-es="Una <strong>Bomba de Vida</strong> (o <em>seed ball</em>) es una pequeña esfera ecológica diseñada por el grado 2°A. Su función principal es proteger las semillas nativas de Cañaguate contra la sequía, los insectos y las aves, permitiendo reforestar suelos áridos y difíciles de alcanzar sin necesidad de cavar la tierra." data-en="A <strong>Life Bomb</strong> (or <em>seed ball</em>) is a small ecological sphere designed by grade 2nd A. Its main function is to protect native Cañaguate seeds against drought, insects, and birds, allowing the reforestation of arid and hard-to-reach soils without digging the earth.">
+                    Una <strong>Bomba de Vida</strong> (o <em>seed ball</em>) es una pequeña esfera ecológica diseñada por el grado 2°A. Su función principal es proteger las semillas nativas de Cañaguate contra la sequía, los insectos y las aves, permitiendo reforestar suelos áridos y difíciles de alcanzar sin necesidad de cavar la tierra.
+                </p>
+            </div>
+
+            <div class="bg-green-50/95 backdrop-blur-sm border-4 border-yellow-400 rounded-3xl p-8 shadow-xl">
+                <div class="flex items-center space-x-4 mb-6">
+                    <span class="text-4xl">🛠️</span>
+                    <h4 class="text-2xl font-black text-green-900" data-es="¿Cómo se hace? (Paso a Paso)" data-en="How is it made? (Step by Step)">¿Cómo se hace? (Paso a Paso)</h4>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">1</div>
+                        <h5 class="font-bold text-green-800 mb-1" data-es="La Mezcla de Arcilla" data-en="Clay Mixture">La Mezcla de Arcilla</h5>
+                        <p class="text-xs text-gray-600" data-es="Combinamos arcilla natural para dar estructura y proteger la semilla de los rayos del sol." data-en="We combine natural clay to provide structure and protect the seed from sunlight.">Combinamos arcilla natural para dar estructura y proteger la semilla de los rayos del sol.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">2</div>
+                        <h5 class="font-bold text-green-800 mb-1" data-es="Nutrientes y Abono" data-en="Nutrients & Compost">Nutrientes y Abono</h5>
+                        <p class="text-xs text-gray-600" data-es="Añadimos tierra fértil y abono orgánico para alimentar a la planta durante sus primeros días de brote." data-en="We add fertile soil and organic compost to feed the plant during its first days of sprouting.">Añadimos tierra fértil y abono orgánico para alimentar a la planta durante sus primeros días de brote.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">3</div>
+                        <h5 class="font-bold text-green-800 mb-1" data-es="Secado al Sol" data-en="Sun Drying">Secado al Sol</h5>
+                        <p class="text-xs text-gray-600" data-es="Moldeamos las esferas y dejamos secar de manera natural hasta que adquieren gran resistencia." data-en="We mold the spheres and let them dry naturally until they acquire great strength.">Moldeamos las esferas y dejamos secar de manera natural hasta que adquieren gran resistencia.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="problema" class="py-12 px-4 max-w-5xl mx-auto">
-            <div class="text-center mb-10">
-                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="⚠️ El Problema y Nuestra Solución" data-en="⚠️ The Problem and Our Solution">⚠️ El Problema y Nuestra Solución</h3>
-                <p class="text-green-200 text-sm" data-es="Comprende por qué necesitamos las Bombas de Vida" data-en="Understand why we need Life Bombs">Comprende por qué necesitamos las Bombas de Vida</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-amber-50/95 backdrop-blur-sm border-4 border-amber-300 rounded-3xl p-8 shadow-md">
-                    <div class="text-4xl mb-3">🏜️</div>
-                    <h4 class="text-xl font-bold text-amber-900 mb-3" data-es="El Suelo Degradado" data-en="Degraded Soil">El Suelo Degradado</h4>
-                    <p class="text-gray-700 text-sm leading-relaxed" data-es="Las zonas verdes sufren de erosión, escasez de nutrientes y pisoteo constante, lo que impide que las semillas naturales germinen por sí solas." data-en="Green areas suffer from erosion, lack of nutrients, and constant foot traffic, preventing natural seeds from germinating on their own.">
-                        Las zonas verdes sufren de erosión, escasez de nutrientes y pisoteo constante, lo que impide que las semillas naturales germinen por sí solas.
-                    </p>
-                </div>
-
-                <div class="bg-green-50/95 backdrop-blur-sm border-4 border-green-300 rounded-3xl p-8 shadow-md">
-                    <div class="text-4xl mb-3">💣🌱</div>
-                    <h4 class="text-xl font-bold text-green-900 mb-3" data-es="La Bomba de Vida" data-en="The Life Bomb">La Bomba de Vida</h4>
-                    <p class="text-gray-700 text-sm leading-relaxed" data-es="Una esfera protectora hecha de arcilla y abono que resguarda la semilla de Cañaguate hasta que llega la lluvia, liberando vida directamente en la tierra." data-en="A protective sphere made of clay and compost that shields the Cañaguate seed until rain arrives, releasing life directly into the earth.">
-                        Una esfera protectora hecha de arcilla y abono que resguarda la semilla de Cañaguate hasta que llega la lluvia, liberando vida directamente en la tierra.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="juego" class="py-12 px-4 bg-green-900/90 backdrop-blur-md text-white border-y border-green-700">
+        <section id="juego" class="py-12 px-4 bg-green-900/90 backdrop-blur-md text-white border-y border-green-700 transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
                 <h3 class="text-3xl font-black mb-2 text-yellow-300" data-es="🎮 Minijuego: ¡Apunta y Revierte la Sequía!" data-en="🎮 Minigame: Aim and Reverse Drought!">🎮 Minijuego: ¡Apunta y Revierte la Sequía!</h3>
                 <p class="text-green-100 mb-6 text-sm" data-es="Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo." data-en="Click quickly on the moving target to throw the bomb and bring life back to the soil.">Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo.</p>
@@ -138,7 +173,7 @@
                     </div>
 
                     <div class="mt-6 flex justify-center gap-4">
-                        <button id="btn-iniciar-juego" onclick="iniciarMinijuego()" class="bg-yellow-400 hover:bg-yellow-300 text-yellow-950 font-black py-3 px-8 rounded-full shadow-lg transition cursor-pointer text-lg" data-es="🚀 Iniciar Juego" data-en="🚀 Start Game">
+                        <button id="btn-iniciar-juego" onclick="iniciarMinijuego()" class="bg-yellow-400 hover:bg-yellow-300 text-yellow-950 font-black py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 cursor-pointer text-lg" data-es="🚀 Iniciar Juego" data-en="🚀 Start Game">
                             🚀 Iniciar Juego
                         </button>
                     </div>
@@ -146,7 +181,7 @@
             </div>
         </section>
 
-        <section id="crecimiento" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner">
+        <section id="crecimiento" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
                 <h3 class="text-3xl font-black text-green-700 mb-2" data-es="📸 Bitácora de Crecimiento" data-en="📸 Growth Logbook">📸 Bitácora de Crecimiento</h3>
                 <p class="text-gray-500 mb-8 text-sm" data-es="Recorrido fotográfico del proceso de elaboración y germinación" data-en="Photographic journey of the preparation and germination process">Recorrido fotográfico del proceso de elaboración y germinación</p>
@@ -166,10 +201,10 @@
                     </div>
 
                     <div class="flex justify-between items-center mt-6 px-4">
-                        <button onclick="cambiarSlide(-1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition cursor-pointer" data-es="⬅️ Anterior" data-en="⬅️ Previous">
+                        <button onclick="cambiarSlide(-1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition transform hover:scale-105 cursor-pointer" data-es="⬅️ Anterior" data-en="⬅️ Previous">
                             ⬅️ Anterior
                         </button>
-                        <button onclick="cambiarSlide(1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition cursor-pointer" data-es="Siguiente ➡️" data-en="Next ➡️">
+                        <button onclick="cambiarSlide(1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition transform hover:scale-105 cursor-pointer" data-es="Siguiente ➡️" data-en="Next ➡️">
                             Siguiente ➡️
                         </button>
                     </div>
@@ -177,22 +212,22 @@
             </div>
         </section>
 
-        <section id="descargas" class="py-12 px-4">
+        <section id="descargas" class="py-12 px-4 transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
                 <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="📥 Descargas del Proyecto (PDF)" data-en="📥 Project Downloads (PDF)">📥 Descargas del Proyecto (PDF)</h3>
                 <p class="text-green-200 mb-8 text-sm" data-es="Obtén el documento oficial de la investigación en tu idioma preferido" data-en="Get the official research document in your preferred language">Obtén el documento oficial de la investigación en tu idioma preferido</p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <a href="./docs/ExpoReporte_Espanol.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition flex flex-col items-center group">
-                        <span class="text-4xl mb-2">🇪🇸</span>
+                    <a href="./docs/ExpoReporte_Espanol.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition transform hover:-translate-y-1 flex flex-col items-center group">
+                        <span class="text-3xl mb-2 font-black text-green-700 bg-green-100 px-3 py-1 rounded-full text-xs">ES</span>
                         <h4 class="font-bold text-green-800 text-lg group-hover:underline" data-es="Versión en Español (PDF)" data-en="Spanish Version (PDF)">Versión en Español (PDF)</h4>
-                        <p class="text-xs text-gray-500 mt-1" data-es="Documento en PDF" data-en="PDF Document">Documento en PDF</p>
+                        <p class="text-xs text-gray-500 mt-1" data-es="Documento oficial de investigación" data-en="Official research document">Documento oficial de investigación</p>
                     </a>
 
-                    <a href="./docs/ExpoReporte_English.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition flex flex-col items-center group">
-                        <span class="text-4xl mb-2">🇬🇧</span>
+                    <a href="./docs/ExpoReporte_English.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition transform hover:-translate-y-1 flex flex-col items-center group">
+                        <span class="text-3xl mb-2 font-black text-green-700 bg-green-100 px-3 py-1 rounded-full text-xs">EN</span>
                         <h4 class="font-bold text-green-800 text-lg group-hover:underline" data-es="Versión en Inglés (PDF)" data-en="English Version (PDF)">Versión en Inglés (PDF)</h4>
-                        <p class="text-xs text-gray-500 mt-1" data-es="Documento en PDF" data-en="PDF Document">Documento en PDF</p>
+                        <p class="text-xs text-gray-500 mt-1" data-es="Documento oficial de investigación" data-en="Official research document">Documento oficial de investigación</p>
                     </a>
                 </div>
             </div>
@@ -208,14 +243,10 @@
     <script>
         let idiomaActual = 'es';
 
-        // ---------------------------------------------------------
-        // FONDOS DINÁMICOS POR ETAPA DEL MINIJUEGO
-        // Cambia 'null' por la ruta de tus imágenes ej: './assets/img/etapa1.jpg'
-        // ---------------------------------------------------------
         const etapasMinijuego = [
-            { umbral: 0,   img: null }, // 0% a 30%: Suelo árido
-            { umbral: 40,  img: null }, // 40% a 60%: Suelo en recuperación
-            { umbral: 80,  img: null }  // 80% a 100%: Suelo reforestado y verde
+            { umbral: 0,   img: null },
+            { umbral: 40,  img: null },
+            { umbral: 80,  img: null }
         ];
 
         let progresoSuelo = 0;
@@ -275,7 +306,6 @@
             barra.style.width = progresoSuelo + '%';
             textoPorcentaje.textContent = progresoSuelo + '%';
 
-            // Seleccionar la imagen de fondo según el progreso actual
             let etapaActual = etapasMinijuego[0];
             if (progresoSuelo >= 80) etapaActual = etapasMinijuego[2];
             else if (progresoSuelo >= 40) etapaActual = etapasMinijuego[1];
