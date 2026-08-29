@@ -1,122 +1,401 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guardianes del Cañaguate - 2°A</title>
-    <!-- Hoja de estilos procesada por Tailwind CSS -->
     <link href="./css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Nunito', sans-serif; background-color: #f0fdf4; }
+        body { font-family: 'Nunito', sans-serif; }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 relative bg-green-950">
 
-    <!-- Navegación -->
-    <nav class="bg-green-600 p-4 text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-wider">🌱 ExpoCiencia 2°A</h1>
-            <ul class="hidden md:flex space-x-6 font-bold">
-                <li><a href="#mapa" class="hover:text-yellow-300 transition">Mapa Digital</a></li>
-                <li><a href="#crecimiento" class="hover:text-yellow-300 transition">Bitácora</a></li>
-                <li><a href="#datos" class="hover:text-yellow-300 transition">Resultados</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="fixed inset-0 z-0 opacity-15 bg-cover bg-center pointer-events-none" style="background-image: url('./assets/img/tu-fondo.jpg');"></div>
 
-    <!-- Header / Hero Section -->
-    <header class="container mx-auto text-center py-16 px-4">
-        <h2 class="text-4xl md:text-6xl font-black text-green-700 mb-4">
-            ¡Salvemos nuestro suelo con <span class="text-yellow-500">Cañaguates</span>!
-        </h2>
-        <p class="text-xl md:text-2xl text-gray-600 font-bold max-w-3xl mx-auto mb-8">
-            Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para reforestar nuestra región[cite: 1].
-        </p>
-    </header>
+    <div class="relative z-10">
 
-    <!-- Mapa Interactivo -->
-    <section id="mapa" class="bg-white py-12 px-4 shadow-inner">
-        <div class="container mx-auto text-center">
-            <h3 class="text-3xl font-black text-green-600">🗺️ Mapa de Lanzamiento</h3>
-            <p class="text-gray-500 mt-2">Simula el impacto de las Bombas de Vida en las zonas degradadas del colegio</p>
-            
-            <div class="relative bg-green-100 rounded-3xl border-4 border-green-500 p-8 max-w-4xl mx-auto h-80 flex flex-col items-center justify-center mt-6 shadow-xl overflow-hidden">
-                <button id="btn-lanzar" class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-black py-3 px-8 rounded-full shadow-lg z-10 transition transform hover:scale-105 cursor-pointer">
-                    🎯 Lanzar Bomba de Vida
-                </button>
-                <div id="marcador-zona" class="hidden absolute top-1/3 left-1/4 bg-[#78350f] w-8 h-8 rounded-full animate-bounce shadow-2xl border-2 border-white flex items-center justify-center text-xs text-white font-bold">🌱</div>
-                <p id="mensaje-lanzamiento" class="mt-4 font-bold text-green-800 text-sm h-6"></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bitácora Fotográfica -->
-    <section id="crecimiento" class="py-12 px-4">
-        <div class="container mx-auto">
-            <h3 class="text-3xl font-black text-center text-green-700 mb-10">📸 Bitácora de Crecimiento</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <nav class="bg-green-600/90 backdrop-blur-md p-4 text-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center">
                 
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-yellow-400">
-                    <div class="bg-green-50 h-48 flex items-center justify-center text-5xl">👐🏽</div>
-                    <div class="p-6 text-center">
-                        <h4 class="text-xl font-bold text-green-600 mb-2">Fase 1: La Mezcla</h4>
-                        <p class="text-gray-600 text-sm">Combinación exacta de arcilla natural, tierra fértil y abono orgánico para proteger la semilla.</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/40 overflow-hidden shadow">
+                        <span class="text-xs font-bold">LOGO</span>
                     </div>
+
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/40 overflow-hidden shadow">
+                        <span class="text-xs font-bold">LOGO</span>
+                    </div>
+
+                    <h1 class="text-xl md:text-2xl font-black tracking-wider ml-1" data-es="🌱 ExpoCiencia 2°A" data-en="🌱 ExpoScience 2°A">🌱 ExpoCiencia 2°A</h1>
                 </div>
 
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-green-500">
-                    <div class="bg-green-50 h-48 flex items-center justify-center text-5xl">☀️</div>
-                    <div class="p-6 text-center">
-                        <h4 class="text-xl font-bold text-green-600 mb-2">Fase 2: Secado y Pruebas</h4>
-                        <p class="text-gray-600 text-sm">Pruebas de resistencia al impacto tras varios días de secado natural al sol.</p>
-                    </div>
+                <div class="flex items-center space-x-4">
+                    <ul class="hidden md:flex space-x-6 font-bold text-sm">
+                        <li><a href="#estudiantes" class="hover:text-yellow-300 transition" data-es="Equipo" data-en="Team">Equipo</a></li>
+                        <li><a href="#problema" class="hover:text-yellow-300 transition" data-es="El Problema" data-en="The Problem">El Problema</a></li>
+                        <li><a href="#juego" class="hover:text-yellow-300 transition" data-es="🎮 Minijuego" data-en="🎮 Minigame">🎮 Minijuego</a></li>
+                        <li><a href="#crecimiento" class="hover:text-yellow-300 transition" data-es="Bitácora" data-en="Logbook">Bitácora</a></li>
+                        <li><a href="#descargas" class="hover:text-yellow-300 transition" data-es="Descargas" data-en="Downloads">Descargas</a></li>
+                    </ul>
+                    <button id="btn-idioma" onclick="cambiarIdioma()" class="bg-yellow-400 text-yellow-900 font-black px-3 py-1 rounded-full text-xs hover:bg-yellow-300 transition shadow">
+                        EN / ES
+                    </button>
                 </div>
-
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-yellow-400">
-                    <div class="bg-green-50 h-48 flex items-center justify-center text-5xl">🌱</div>
-                    <div class="p-6 text-center">
-                        <h4 class="text-xl font-bold text-green-600 mb-2">Fase 3: Germinación</h4>
-                        <p class="text-gray-600 text-sm">Evolución y surgimiento de los primeros brotes nativos de Cañaguate.</p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Resultados y Matemáticas -->
-    <section id="datos" class="bg-green-700 text-white py-12 px-4 shadow-inner rounded-t-3xl mt-8">
-        <div class="container mx-auto max-w-4xl">
-            <h3 class="text-3xl font-black text-center mb-10 text-yellow-300">📊 Resultados de la Investigación</h3>
-            
+        <header class="container mx-auto text-center py-16 px-4">
+            <h2 class="text-4xl md:text-6xl font-black text-white drop-shadow-md mb-4" data-es="¡Salvemos nuestro suelo con <span class='text-yellow-400'>Cañaguates</span>!" data-en="Let's save our soil with <span class='text-yellow-400'>Cañaguates</span>!">
+                ¡Salvemos nuestro suelo con <span class="text-yellow-400">Cañaguates</span>!
+            </h2>
+            <p class="text-xl md:text-2xl text-green-100 font-bold max-w-3xl mx-auto mb-8 drop-shadow" data-es="Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para reforestar nuestra región." data-en="STEM+ project from Colegio La Nueva Esperanza. Life Bombs created by 2nd grade A to reforest our region.">
+                Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para reforestar nuestra región.
+            </p>
+        </header>
+
+        <section id="estudiantes" class="py-10 px-4 bg-white/95 backdrop-blur-sm shadow-inner">
+            <div class="container mx-auto max-w-6xl text-center">
+                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="👥 Equipo de Investigadores (Grado 2°A)" data-en="👥 Research Team (Grade 2°A)">👥 Equipo de Investigadores (Grado 2°A)</h3>
+                <p class="text-gray-500 mb-8 text-sm" data-es="Estudiantes expositores del proyecto" data-en="Exhibiting students of the project">Estudiantes expositores del proyecto</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
+                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Espinosa Ochoa Eliad David</h4>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
+                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Mendoza Tom Kamila Sofia</h4>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
+                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Muños Madrid Lucia</h4>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center">
+                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Rodrigues Goez Samuel David</h4>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-3xl border-2 border-green-200 shadow-md flex flex-col items-center sm:col-span-2 lg:col-span-1">
+                        <div class="w-20 h-20 bg-green-200 rounded-full flex items-center justify-center text-3xl mb-3 shadow-inner border-2 border-white">📷</div>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Tarriba Gonzalez Antonella</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problema" class="py-12 px-4 max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="⚠️ El Problema y Nuestra Solución" data-en="⚠️ The Problem and Our Solution">⚠️ El Problema y Nuestra Solución</h3>
+                <p class="text-green-200 text-sm" data-es="Comprende por qué necesitamos las Bombas de Vida" data-en="Understand why we need Life Bombs">Comprende por qué necesitamos las Bombas de Vida</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-green-800 p-6 rounded-2xl shadow-lg border border-green-600">
-                    <h4 class="text-xl font-bold mb-4">Éxito de Germinación</h4>
-                    <div class="w-full bg-green-900 rounded-full h-6 mb-2 overflow-hidden">
-                        <div class="bg-yellow-400 h-6 rounded-full transition-all duration-1000" style="width: 85%"></div>
-                    </div>
-                    <p class="text-right font-black text-yellow-300 text-lg">85%</p>
-                    <p class="text-xs mt-1 text-green-200">Porcentaje de éxito en la retención de humedad y brote inicial.</p>
+                <div class="bg-amber-50/95 backdrop-blur-sm border-4 border-amber-300 rounded-3xl p-8 shadow-md">
+                    <div class="text-4xl mb-3">🏜️</div>
+                    <h4 class="text-xl font-bold text-amber-900 mb-3" data-es="El Suelo Degradado" data-en="Degraded Soil">El Suelo Degradado</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed" data-es="Las zonas verdes sufren de erosión, escasez de nutrientes y pisoteo constante, lo que impide que las semillas naturales germinen por sí solas." data-en="Green areas suffer from erosion, lack of nutrients, and constant foot traffic, preventing natural seeds from germinating on their own.">
+                        Las zonas verdes sufren de erosión, escasez de nutrientes y pisoteo constante, lo que impide que las semillas naturales germinen por sí solas.
+                    </p>
                 </div>
 
-                <div class="bg-green-800 p-6 rounded-2xl shadow-lg text-center border border-green-600 flex flex-col justify-center">
-                    <h4 class="text-xl font-bold mb-2">Mezcla Óptima</h4>
-                    <div class="text-4xl my-2">🏆</div>
-                    <p class="font-black text-yellow-300 text-lg">60% Arcilla / 40% Abono</p>
-                    <p class="text-xs mt-1 text-green-200">Proporción con mayor resistencia estructural ante caídas.</p>
+                <div class="bg-green-50/95 backdrop-blur-sm border-4 border-green-300 rounded-3xl p-8 shadow-md">
+                    <div class="text-4xl mb-3">💣🌱</div>
+                    <h4 class="text-xl font-bold text-green-900 mb-3" data-es="La Bomba de Vida" data-en="The Life Bomb">La Bomba de Vida</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed" data-es="Una esfera protectora hecha de arcilla y abono que resguarda la semilla de Cañaguate hasta que llega la lluvia, liberando vida directamente en la tierra." data-en="A protective sphere made of clay and compost that shields the Cañaguate seed until rain arrives, releasing life directly into the earth.">
+                        Una esfera protectora hecha de arcilla y abono que resguarda la semilla de Cañaguate hasta que llega la lluvia, liberando vida directamente en la tierra.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-green-900 text-center py-6 text-green-200">
-        <p class="font-bold text-md">Colegio La Nueva Esperanza - Grado 2°A[cite: 1]</p>
-        <p class="text-xs mt-1 opacity-75">ExpoCiencia 2026 Jaime Lora Jaramillo[cite: 1]</p>
-    </footer>
+        <section id="juego" class="py-12 px-4 bg-green-900/90 backdrop-blur-md text-white border-y border-green-700">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h3 class="text-3xl font-black mb-2 text-yellow-300" data-es="🎮 Minijuego: ¡Apunta y Revierte la Sequía!" data-en="🎮 Minigame: Aim and Reverse Drought!">🎮 Minijuego: ¡Apunta y Revierte la Sequía!</h3>
+                <p class="text-green-100 mb-6 text-sm" data-es="Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo." data-en="Click quickly on the moving target to throw the bomb and bring life back to the soil.">Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo.</p>
 
-    <!-- Script de Interactividad -->
-    <script src="./js/main.js"></script>
+                <div class="bg-green-950 border-4 border-yellow-400 rounded-3xl p-6 shadow-2xl">
+                    <div class="mb-6 bg-green-900 px-6 py-4 rounded-2xl border border-green-700">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-bold text-green-200" data-es="Progreso de Restauración del Suelo" data-en="Soil Restoration Progress">Progreso de Restauración del Suelo</span>
+                            <span id="porcentaje-texto" class="text-yellow-300 font-black">0%</span>
+                        </div>
+                        <div class="w-full bg-black/50 rounded-full h-5 overflow-hidden border border-green-600">
+                            <div id="barra-progreso" class="bg-yellow-400 h-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div id="campo-objetivo" class="h-64 bg-amber-950/80 border-4 border-dashed border-amber-500 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center">
+                        <div id="info-terreno" class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 pointer-events-none p-4 z-10">
+                            <span id="icono-suelo" class="text-5xl mb-2">🏜️</span>
+                            <p id="mensaje-suelo" class="font-bold text-amber-200 text-sm text-center" data-es="¡Haz clic en 'Iniciar Juego' para comenzar a apuntar!" data-en="Click 'Start Game' to start aiming!">¡Haz clic en 'Iniciar Juego' para comenzar a apuntar!</p>
+                        </div>
+
+                        <div id="blanco-movil" onclick="marcarAcierto(event)" class="hidden absolute w-16 h-16 bg-yellow-400 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-2xl cursor-pointer transform hover:scale-110 transition animate-bounce z-20">
+                            🎯
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex justify-center gap-4">
+                        <button id="btn-iniciar-juego" onclick="iniciarMinijuego()" class="bg-yellow-400 hover:bg-yellow-300 text-yellow-950 font-black py-3 px-8 rounded-full shadow-lg transition cursor-pointer text-lg" data-es="🚀 Iniciar Juego" data-en="🚀 Start Game">
+                            🚀 Iniciar Juego
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="crecimiento" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="📸 Bitácora de Crecimiento" data-en="📸 Growth Logbook">📸 Bitácora de Crecimiento</h3>
+                <p class="text-gray-500 mb-8 text-sm" data-es="Recorrido fotográfico del proceso de elaboración y germinación" data-en="Photographic journey of the preparation and germination process">Recorrido fotográfico del proceso de elaboración y germinación</p>
+                
+                <div class="relative bg-green-50 border-4 border-green-300 rounded-3xl shadow-xl overflow-hidden p-6">
+                    <div class="absolute top-4 left-4 bg-green-600 text-white font-black px-3 py-1 rounded-full text-xs shadow z-10">
+                        <span id="carrusel-numero">1</span> / <span id="carrusel-total">4</span>
+                    </div>
+
+                    <div id="carrusel-contenedor-foto" class="h-64 md:h-80 bg-green-200 rounded-2xl flex items-center justify-center shadow-inner mb-4 transition-all duration-300 overflow-hidden">
+                        <span class="text-6xl">📷</span>
+                    </div>
+
+                    <div class="min-h-[70px] flex flex-col justify-center">
+                        <h4 id="carrusel-titulo" class="text-xl font-bold text-green-800">Fase 1</h4>
+                        <p id="carrusel-desc" class="text-gray-600 text-sm mt-1">Descripción de la fase...</p>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-6 px-4">
+                        <button onclick="cambiarSlide(-1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition cursor-pointer" data-es="⬅️ Anterior" data-en="⬅️ Previous">
+                            ⬅️ Anterior
+                        </button>
+                        <button onclick="cambiarSlide(1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition cursor-pointer" data-es="Siguiente ➡️" data-en="Next ➡️">
+                            Siguiente ➡️
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="descargas" class="py-12 px-4">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="📥 Descargas del Proyecto (PDF)" data-en="📥 Project Downloads (PDF)">📥 Descargas del Proyecto (PDF)</h3>
+                <p class="text-green-200 mb-8 text-sm" data-es="Obtén el documento oficial de la investigación en tu idioma preferido" data-en="Get the official research document in your preferred language">Obtén el documento oficial de la investigación en tu idioma preferido</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <a href="./docs/ExpoReporte_Espanol.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition flex flex-col items-center group">
+                        <span class="text-4xl mb-2">🇪🇸</span>
+                        <h4 class="font-bold text-green-800 text-lg group-hover:underline" data-es="Versión en Español (PDF)" data-en="Spanish Version (PDF)">Versión en Español (PDF)</h4>
+                        <p class="text-xs text-gray-500 mt-1" data-es="Documento en PDF" data-en="PDF Document">Documento en PDF</p>
+                    </a>
+
+                    <a href="./docs/ExpoReporte_English.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition flex flex-col items-center group">
+                        <span class="text-4xl mb-2">🇬🇧</span>
+                        <h4 class="font-bold text-green-800 text-lg group-hover:underline" data-es="Versión en Inglés (PDF)" data-en="English Version (PDF)">Versión en Inglés (PDF)</h4>
+                        <p class="text-xs text-gray-500 mt-1" data-es="Documento en PDF" data-en="PDF Document">Documento en PDF</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-green-950 text-center py-6 text-green-200 border-t border-green-900">
+            <p class="font-bold text-md" data-es="Colegio La Nueva Esperanza - Grado 2°A" data-en="Colegio La Nueva Esperanza - Grade 2°A">Colegio La Nueva Esperanza - Grado 2°A</p>
+            <p class="text-xs mt-1 opacity-75" data-es="ExpoCiencia 2026 Jaime Lora Jaramillo" data-en="ExpoScience 2026 Jaime Lora Jaramillo">ExpoCiencia 2026 Jaime Lora Jaramillo</p>
+        </footer>
+
+    </div>
+
+    <script>
+        let idiomaActual = 'es';
+
+        // ---------------------------------------------------------
+        // FONDOS DINÁMICOS POR ETAPA DEL MINIJUEGO
+        // Cambia 'null' por la ruta de tus imágenes ej: './assets/img/etapa1.jpg'
+        // ---------------------------------------------------------
+        const etapasMinijuego = [
+            { umbral: 0,   img: null }, // 0% a 30%: Suelo árido
+            { umbral: 40,  img: null }, // 40% a 60%: Suelo en recuperación
+            { umbral: 80,  img: null }  // 80% a 100%: Suelo reforestado y verde
+        ];
+
+        let progresoSuelo = 0;
+        let juegoActivo = false;
+        let intervaloBlanco = null;
+
+        function iniciarMinijuego() {
+            progresoSuelo = 0;
+            juegoActivo = true;
+            document.getElementById('btn-iniciar-juego').classList.add('hidden');
+            document.getElementById('info-terreno').classList.add('hidden');
+            document.getElementById('blanco-movil').classList.remove('hidden');
+            actualizarInterfazJuego();
+            moverBlancoAleatorio();
+
+            clearInterval(intervaloBlanco);
+            intervaloBlanco = setInterval(() => {
+                if (juegoActivo) moverBlancoAleatorio();
+            }, 1500);
+        }
+
+        function moverBlancoAleatorio() {
+            const campo = document.getElementById('campo-objetivo');
+            const blanco = document.getElementById('blanco-movil');
+            
+            const maxX = campo.clientWidth - 80;
+            const maxY = campo.clientHeight - 80;
+            
+            const randomX = Math.floor(Math.random() * Math.max(10, maxX));
+            const randomY = Math.floor(Math.random() * Math.max(10, maxY));
+            
+            blanco.style.left = randomX + 'px';
+            blanco.style.top = randomY + 'px';
+            blanco.style.position = 'absolute';
+        }
+
+        function marcarAcierto(event) {
+            event.stopPropagation();
+            if (!juegoActivo) return;
+
+            progresoSuelo += 20;
+            if (progresoSuelo > 100) progresoSuelo = 100;
+
+            actualizarInterfazJuego();
+            moverBlancoAleatorio();
+
+            if (progresoSuelo >= 100) {
+                finalizarMinijuego();
+            }
+        }
+
+        function actualizarInterfazJuego() {
+            const barra = document.getElementById('barra-progreso');
+            const textoPorcentaje = document.getElementById('porcentaje-texto');
+            const campo = document.getElementById('campo-objetivo');
+
+            barra.style.width = progresoSuelo + '%';
+            textoPorcentaje.textContent = progresoSuelo + '%';
+
+            // Seleccionar la imagen de fondo según el progreso actual
+            let etapaActual = etapasMinijuego[0];
+            if (progresoSuelo >= 80) etapaActual = etapasMinijuego[2];
+            else if (progresoSuelo >= 40) etapaActual = etapasMinijuego[1];
+
+            if (etapaActual.img) {
+                campo.style.backgroundImage = `url('${etapaActual.img}')`;
+            } else {
+                campo.style.backgroundImage = 'none';
+                if (progresoSuelo <= 30) {
+                    campo.className = "h-64 bg-amber-950/80 border-4 border-dashed border-amber-500 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center";
+                } else if (progresoSuelo <= 70) {
+                    campo.className = "h-64 bg-yellow-900/70 border-4 border-dashed border-yellow-500 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center";
+                } else {
+                    campo.className = "h-64 bg-green-900/80 border-4 border-solid border-green-400 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center";
+                }
+            }
+        }
+
+        function finalizarMinijuego() {
+            juegoActivo = false;
+            clearInterval(intervaloBlanco);
+            document.getElementById('blanco-movil').classList.add('hidden');
+            
+            const infoTerreno = document.getElementById('info-terreno');
+            infoTerreno.classList.remove('hidden');
+            document.getElementById('icono-suelo').textContent = '🌳🌼✨';
+            
+            const mensajeSuelo = document.getElementById('mensaje-suelo');
+            mensajeSuelo.textContent = idiomaActual === 'es' ? '¡Increíble! Has reforestado y recuperado el 100% del suelo con Cañaguates.' : 'Amazing! You have reforested and recovered 100% of the soil with Cañaguates.';
+
+            const btnReiniciar = document.getElementById('btn-iniciar-juego');
+            btnReiniciar.textContent = idiomaActual === 'es' ? '🔄 Jugar de Nuevo' : '🔄 Play Again';
+            btnReiniciar.classList.remove('hidden');
+        }
+
+        const slides = [
+            {
+                img: null,
+                esTitulo: 'Fase 1: Recolección y Mezcla',
+                enTitulo: 'Phase 1: Collection & Mixture',
+                esDesc: 'Combinación exacta de arcilla natural, tierra fértil y abono orgánico para proteger la semilla.'
+            },
+            {
+                img: null,
+                esTitulo: 'Fase 2: Elaboración de las Bombas',
+                enTitulo: 'Phase 2: Crafting the Bombs',
+                esDesc: 'Moldeado esférico de las bombas de vida asegurando la compactación adecuada.'
+            },
+            {
+                img: null,
+                esTitulo: 'Fase 3: Secado Natural',
+                enTitulo: 'Phase 3: Natural Drying',
+                esDesc: 'Pruebas de resistencia al impacto tras varios días de secado natural al sol.'
+            },
+            {
+                img: null,
+                esTitulo: 'Fase 4: Germinación y Brotes',
+                enTitulo: 'Phase 4: Germination & Sprouts',
+                esDesc: 'Evolución y surgimiento de los primeros brotes nativos de Cañaguate.'
+            }
+        ];
+
+        let indiceSlide = 0;
+
+        function actualizarCarrusel() {
+            const slideActual = slides[indiceSlide];
+            document.getElementById('carrusel-numero').textContent = indiceSlide + 1;
+            document.getElementById('carrusel-total').textContent = slides.length;
+            
+            const contenedorFoto = document.getElementById('carrusel-contenedor-foto');
+            const tituloEl = document.getElementById('carrusel-titulo');
+            const descEl = document.getElementById('carrusel-desc');
+
+            if (slideActual.img) {
+                contenedorFoto.innerHTML = `<img src="${slideActual.img}" alt="Foto bitácora" class="w-full h-full object-cover">`;
+            } else {
+                contenedorFoto.innerHTML = `<div class="flex flex-col items-center justify-center text-green-700"><span class="text-6xl mb-1">📷</span><span class="text-xs font-bold opacity-75">Espacio para Foto ${indiceSlide + 1}</span></div>`;
+            }
+
+            if (idiomaActual === 'es') {
+                tituloEl.textContent = slideActual.esTitulo;
+                descEl.textContent = slideActual.esDesc;
+            } else {
+                tituloEl.textContent = slideActual.enTitulo;
+                descEl.textContent = slideActual.enDesc;
+            }
+        }
+
+        function cambiarSlide(direccion) {
+            indiceSlide += direccion;
+            if (indiceSlide < 0) {
+                indiceSlide = slides.length - 1;
+            } else if (indiceSlide >= slides.length) {
+                indiceSlide = 0;
+            }
+            actualizarCarrusel();
+        }
+
+        function cambiarIdioma() {
+            idiomaActual = idiomaActual === 'es' ? 'en' : 'es';
+            document.getElementById('html-root').lang = idiomaActual;
+            
+            const elementos = document.querySelectorAll('[data-es]');
+            elementos.forEach(el => {
+                if (idiomaActual === 'en') {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-es');
+                }
+            });
+
+            actualizarCarrusel();
+
+            const btn = document.getElementById('btn-idioma');
+            btn.textContent = idiomaActual === 'es' ? 'EN / ES' : 'ES / EN';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            actualizarCarrusel();
+        });
+    </script>
 </body>
 </html>
