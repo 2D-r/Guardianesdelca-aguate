@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" id="html-root" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,59 @@
     <link href="./css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Nunito', sans-serif; }
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
     </style>
 </head>
+
 <body class="text-gray-800 relative bg-green-950">
 
-    <div class="fixed inset-0 z-0 opacity-15 bg-cover bg-center pointer-events-none" style="background-image: url('./assets/img/tu-fondo.jpg');"></div>
+    <div class="fixed inset-0 z-0 opacity-15 bg-cover bg-center pointer-events-none"
+        style="background-image: url('./assets/img/tu-fondo.jpg');"></div>
 
     <div class="relative z-10">
 
-        <nav class="bg-green-600/90 backdrop-blur-md p-4 text-white shadow-lg sticky top-0 z-50 transition-all duration-300">
+        <nav
+            class="bg-green-600/90 backdrop-blur-md p-4 text-white shadow-lg sticky top-0 z-50 transition-all duration-300">
             <div class="container mx-auto flex justify-between items-center">
-                
+
                 <div class="flex items-center space-x-3">
-                    
-                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/40 overflow-hidden shadow">
+
+                    <div
+                        class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/40 overflow-hidden shadow">
                         <img src="/assets/img/logos/NE.jpeg" alt="NuevaEsperanza" class="w-full h-full object-cover">
                     </div>
 
-                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/40 overflow-hidden shadow">
+                    <div
+                        class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/40 overflow-hidden shadow">
                         <img src="/assets/img/logos/EC.jpeg" alt="ExpoCiencia" class="w-full h-full object-cover">
                     </div>
 
-                    <h1 class="text-xl md:text-2xl font-black tracking-wider ml-1" data-es="ExpoCiencia 2°A" data-en="ExpoScience 2°A">ExpoCiencia 2°A</h1>
+                    <h1 class="text-xl md:text-2xl font-black tracking-wider ml-1" data-es="ExpoCiencia 2°A"
+                        data-en="ExpoScience 2°A">ExpoCiencia 2°A</h1>
                 </div>
 
                 <div class="flex items-center space-x-4">
                     <ul class="hidden md:flex space-x-6 font-bold text-sm">
-                        <li><a href="#estudiantes" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Equipo" data-en="Team">Equipo</a></li>
-                        <li><a href="#que-es" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Bomba de Vida" data-en="Life Bomb">Bomba de Vida</a></li>
-                        <li><a href="#juego" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Minijuego" data-en="Minigame">Minijuego</a></li>
-                        <li><a href="#crecimiento" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Bitácora" data-en="Logbook">Bitácora</a></li>
-                        <li><a href="#descargas" class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block" data-es="Descargas" data-en="Downloads">Descargas</a></li>
+                        <li><a href="#estudiantes"
+                                class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
+                                data-es="Equipo" data-en="Team">Equipo</a></li>
+                        <li><a href="#que-es"
+                                class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
+                                data-es="Bomba de Vida" data-en="Life Bomb">Bomba de Vida</a></li>
+                        <li><a href="#juego"
+                                class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
+                                data-es="Minijuego" data-en="Minigame">Minijuego</a></li>
+                        <li><a href="#crecimiento"
+                                class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
+                                data-es="Bitácora" data-en="Logbook">Bitácora</a></li>
+                        <li><a href="#descargas"
+                                class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
+                                data-es="Descargas" data-en="Downloads">Descargas</a></li>
                     </ul>
-                    <button id="btn-idioma" onclick="cambiarIdioma()" class="bg-yellow-400 text-yellow-900 font-black px-3 py-1 rounded-full text-xs hover:bg-yellow-300 transition transform hover:scale-105 shadow">
+                    <button id="btn-idioma" onclick="cambiarIdioma()"
+                        class="bg-yellow-400 text-yellow-900 font-black px-3 py-1 rounded-full text-xs hover:bg-yellow-300 transition transform hover:scale-105 shadow">
                         EN / ES
                     </button>
                 </div>
@@ -48,52 +68,70 @@
         </nav>
 
         <header class="container mx-auto text-center py-16 px-4">
-            <h2 class="text-4xl md:text-6xl font-black text-white drop-shadow-md mb-4" data-es="¡Salvemos nuestro suelo con <span class='text-yellow-400'>Cañaguates</span>!" data-en="Let's save our soil with <span class='text-yellow-400'>Cañaguates</span>!">
+            <h2 class="text-4xl md:text-6xl font-black text-white drop-shadow-md mb-4"
+                data-es="¡Salvemos nuestro suelo con <span class='text-yellow-400'>Cañaguates</span>!"
+                data-en="Let's save our soil with <span class='text-yellow-400'>Cañaguates</span>!">
                 ¡Salvemos nuestro suelo con <span class="text-yellow-400">Cañaguates</span>!
             </h2>
-            <p class="text-xl md:text-2xl text-green-100 font-bold max-w-3xl mx-auto mb-8 drop-shadow" data-es="Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para reforestar nuestra región." data-en="STEM+ project from Colegio La Nueva Esperanza. Life Bombs created by 2nd grade A to reforest our region.">
-                Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para reforestar nuestra región.
+            <p class="text-xl md:text-2xl text-green-100 font-bold max-w-3xl mx-auto mb-8 drop-shadow"
+                data-es="Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para reforestar nuestra región."
+                data-en="STEM+ project from Colegio La Nueva Esperanza. Life Bombs created by 2nd grade A to reforest our region.">
+                Proyecto STEM+ del Colegio La Nueva Esperanza. Las Bombas de Vida creadas por el grado 2°A para
+                reforestar nuestra región.
             </p>
         </header>
 
         <section id="estudiantes" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner transition duration-500">
             <div class="container mx-auto max-w-6xl text-center">
-                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="Equipo de Investigadores (Grado 2°A)" data-en="Research Team (Grade 2°A)">Equipo de Investigadores (Grado 2°A)</h3>
-                <p class="text-gray-500 mb-8 text-sm" data-es="Estudiantes expositores del proyecto" data-en="Exhibiting students of the project">Estudiantes expositores del proyecto</p>
-                
+                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="Equipo de Investigadores (Grado 2°A)"
+                    data-en="Research Team (Grade 2°A)">Equipo de Investigadores (Grado 2°A)</h3>
+                <p class="text-gray-500 mb-8 text-sm" data-es="Estudiantes expositores del proyecto"
+                    data-en="Exhibiting students of the project">Estudiantes expositores del proyecto</p>
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    
-                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
-                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+
+                    <div
+                        class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div
+                            class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="/assets/img/miembros/eliad.jpg" alt="Eliad" class="w-full h-full object-cover">
                         </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Espinosa Ochoa Eliad David</h4>
                     </div>
 
-                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
-                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                    <div
+                        class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div
+                            class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="/assets/img/miembros/kamila.jpg" alt="Kamila" class="w-full h-full object-cover">
                         </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Mendoza Tom Kamila Sofia</h4>
                     </div>
 
-                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
-                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                    <div
+                        class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div
+                            class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="/assets/img/miembros/lucia.jpg" alt="Lucia" class="w-full h-full object-cover">
                         </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Muños Madrid Lucia</h4>
                     </div>
 
-                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center sm:col-span-2 lg:col-span-1">
-                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
+                    <div
+                        class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center sm:col-span-2 lg:col-span-1">
+                        <div
+                            class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="/assets/img/miembros/samuel.jpg" alt="Samuel" class="w-full h-full object-cover">
                         </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Rodrigues Goez Samuel David</h4>
                     </div>
 
-                    <div class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
-                        <div class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center">
-                            <img src="/assets/img/miembros/antonella.jpeg" alt="Antonella" class="w-full h-full object-cover">
+                    <div
+                        class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
+                        <div
+                            class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center">
+                            <img src="/assets/img/miembros/antonella.jpeg" alt="Antonella"
+                                class="w-full h-full object-cover">
                         </div>
                         <h4 class="font-bold text-green-900 text-sm mt-1">Tarriba Gonzalez Antonella</h4>
                     </div>
@@ -104,77 +142,200 @@
 
         <section id="que-is" class="py-12 px-4 max-w-5xl mx-auto transition duration-500">
             <div class="text-center mb-10">
-                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="💣 ¿Qué es y Cómo se hace una Bomba de Vida?" data-en="💣 What is a Life Bomb and How is it Made?">💣 ¿Qué es y Cómo se hace una Bomba de Vida?</h3>
-                <p class="text-green-200 text-sm" data-es="Conoce nuestra innovadora solución tecnológica y natural" data-en="Learn about our innovative technological and natural solution">Conoce nuestra innovadora solución tecnológica y natural</p>
+                <h3 class="text-3xl font-black text-white drop-shadow mb-2"
+                    data-es="💣 ¿Qué es y Cómo se hace una Bomba de Vida?"
+                    data-en="💣 What is a Life Bomb and How is it Made?">💣 ¿Qué es y Cómo se hace una Bomba de Vida?
+                </h3>
+                <p class="text-green-200 text-sm" data-es="Conoce nuestra innovadora solución tecnológica y natural"
+                    data-en="Learn about our innovative technological and natural solution">Conoce nuestra innovadora
+                    solución tecnológica y natural</p>
             </div>
 
             <div class="bg-white/95 backdrop-blur-sm border-4 border-green-500 rounded-3xl p-8 shadow-xl mb-8">
                 <div class="flex items-center space-x-4 mb-4">
                     <span class="text-4xl">🌱</span>
-                    <h4 class="text-2xl font-black text-green-800" data-es="¿Qué es una Bomba de Vida?" data-en="What is a Life Bomb?">¿Qué es una Bomba de Vida?</h4>
+                    <h4 class="text-2xl font-black text-green-800" data-es="¿Qué es una Bomba de Vida?"
+                        data-en="What is a Life Bomb?">¿Qué es una Bomba de Vida?</h4>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-base" data-es="Una <strong>Bomba de Vida</strong> (o <em>seed ball</em>) es una pequeña esfera ecológica diseñada por el grado 2°A. Su función principal es proteger las semillas nativas de Cañaguate contra la sequía, los insectos y las aves, permitiendo reforestar suelos áridos y difíciles de alcanzar sin necesidad de cavar la tierra." data-en="A <strong>Life Bomb</strong> (or <em>seed ball</em>) is a small ecological sphere designed by grade 2nd A. Its main function is to protect native Cañaguate seeds against drought, insects, and birds, allowing the reforestation of arid and hard-to-reach soils without digging the earth.">
-                    Una <strong>Bomba de Vida</strong> (o <em>seed ball</em>) es una pequeña esfera ecológica diseñada por el grado 2°A. Su función principal es proteger las semillas nativas de Cañaguate contra la sequía, los insectos y las aves, permitiendo reforestar suelos áridos y difíciles de alcanzar sin necesidad de cavar la tierra.
+                <p class="text-gray-700 leading-relaxed text-base"
+                    data-es="Una <strong>Bomba de Vida</strong> (o <em>seed ball</em>) es una pequeña esfera ecológica diseñada por el grado 2°A. Su función principal es proteger las semillas nativas de Cañaguate contra la sequía, los insectos y las aves, permitiendo reforestar suelos áridos y difíciles de alcanzar sin necesidad de cavar la tierra."
+                    data-en="A <strong>Life Bomb</strong> (or <em>seed ball</em>) is a small ecological sphere designed by grade 2nd A. Its main function is to protect native Cañaguate seeds against drought, insects, and birds, allowing the reforestation of arid and hard-to-reach soils without digging the earth.">
+                    Una <strong>Bomba de Vida</strong> (o <em>seed ball</em>) es una pequeña esfera ecológica diseñada
+                    por el grado 2°A. Su función principal es proteger las semillas nativas de Cañaguate contra la
+                    sequía, los insectos y las aves, permitiendo reforestar suelos áridos y difíciles de alcanzar sin
+                    necesidad de cavar la tierra.
                 </p>
             </div>
 
             <div class="bg-green-50/95 backdrop-blur-sm border-4 border-yellow-400 rounded-3xl p-8 shadow-xl">
                 <div class="flex items-center space-x-4 mb-6">
                     <span class="text-4xl">🛠️</span>
-                    <h4 class="text-2xl font-black text-green-900" data-es="¿Cómo se hace? (Paso a Paso)" data-en="How is it made? (Step by Step)">¿Cómo se hace? (Paso a Paso)</h4>
+                    <h4 class="text-2xl font-black text-green-900" data-es="¿Cómo se hace? (Paso a Paso)"
+                        data-en="How is it made? (Step by Step)">¿Cómo se hace? (Paso a Paso)</h4>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
-                        <div class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">1</div>
-                        <h5 class="font-bold text-green-800 mb-1" data-es="La Mezcla de Arcilla" data-en="Clay Mixture">La Mezcla de Arcilla</h5>
-                        <p class="text-xs text-gray-600" data-es="Combinamos arcilla natural para dar estructura y proteger la semilla de los rayos del sol." data-en="We combine natural clay to provide structure and protect the seed from sunlight.">Combinamos arcilla natural para dar estructura y proteger la semilla de los rayos del sol.</p>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">
+                            1</div>
+                        <h5 class="font-bold text-green-800 mb-1" data-es="La Mezcla de Arcilla" data-en="Clay Mixture">
+                            La Mezcla de Arcilla</h5>
+                        <p class="text-xs text-gray-600"
+                            data-es="Combinamos arcilla natural para dar estructura y proteger la semilla de los rayos del sol."
+                            data-en="We combine natural clay to provide structure and protect the seed from sunlight.">
+                            Combinamos arcilla natural para dar estructura y proteger la semilla de los rayos del sol.
+                        </p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
-                        <div class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">2</div>
-                        <h5 class="font-bold text-green-800 mb-1" data-es="Nutrientes y Abono" data-en="Nutrients & Compost">Nutrientes y Abono</h5>
-                        <p class="text-xs text-gray-600" data-es="Añadimos tierra fértil y abono orgánico para alimentar a la planta durante sus primeros días de brote." data-en="We add fertile soil and organic compost to feed the plant during its first days of sprouting.">Añadimos tierra fértil y abono orgánico para alimentar a la planta durante sus primeros días de brote.</p>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">
+                            2</div>
+                        <h5 class="font-bold text-green-800 mb-1" data-es="Nutrientes y Abono"
+                            data-en="Nutrients & Compost">Nutrientes y Abono</h5>
+                        <p class="text-xs text-gray-600"
+                            data-es="Añadimos tierra fértil y abono orgánico para alimentar a la planta durante sus primeros días de brote."
+                            data-en="We add fertile soil and organic compost to feed the plant during its first days of sprouting.">
+                            Añadimos tierra fértil y abono orgánico para alimentar a la planta durante sus primeros días
+                            de brote.</p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
-                        <div class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">3</div>
-                        <h5 class="font-bold text-green-800 mb-1" data-es="Secado al Sol" data-en="Sun Drying">Secado al Sol</h5>
-                        <p class="text-xs text-gray-600" data-es="Moldeamos las esferas y dejamos secar de manera natural hasta que adquieren gran resistencia." data-en="We mold the spheres and let them dry naturally until they acquire great strength.">Moldeamos las esferas y dejamos secar de manera natural hasta que adquieren gran resistencia.</p>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow border-2 border-green-200 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 bg-yellow-400 text-yellow-950 font-black rounded-full flex items-center justify-center text-xl mb-3 shadow">
+                            3</div>
+                        <h5 class="font-bold text-green-800 mb-1" data-es="Secado al Sol" data-en="Sun Drying">Secado al
+                            Sol</h5>
+                        <p class="text-xs text-gray-600"
+                            data-es="Moldeamos las esferas y dejamos secar de manera natural hasta que adquieren gran resistencia."
+                            data-en="We mold the spheres and let them dry naturally until they acquire great strength.">
+                            Moldeamos las esferas y dejamos secar de manera natural hasta que adquieren gran
+                            resistencia.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="juego" class="py-12 px-4 bg-green-900/90 backdrop-blur-md text-white border-y border-green-700 transition duration-500">
+        <section id="importancia" class="py-12 px-4 max-w-5xl mx-auto transition duration-500">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-black text-white drop-shadow mb-2"
+                    data-es="🌳 Importancia del Cañaguate y su Medio Ambiente"
+                    data-en="🌳 Importance of Cañaguate and its Environment">🌳 Importancia del Cañaguate y su Medio
+                    Ambiente</h3>
+                <p class="text-green-200 text-sm"
+                    data-es="Descubre cómo este árbol nativo transforma y protege nuestra región"
+                    data-en="Discover how this native tree transforms and protects our region">Descubre cómo este árbol
+                    nativo transforma y protege nuestra región</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div
+                    class="bg-white/95 backdrop-blur-sm border-4 border-green-500 rounded-3xl p-8 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="text-3xl">🌼</span>
+                            <h4 class="text-xl font-bold text-green-800" data-es="Valor Ecológico y Paisajístico"
+                                data-en="Ecological & Scenic Value">Valor Ecológico y Paisajístico</h4>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed"
+                            data-es="El <strong>Cañaguate</strong> (Handroanthus chrysanthus) es un símbolo de resiliencia natural. Durante su floración masiva, provee alimento esencial (néctar y polen) para abejas, mariposas y aves polinizadoras, manteniendo el equilibrio de los ecosistemas locales."
+                            data-en="The <strong>Cañaguate</strong> (Handroanthus chrysanthus) is a symbol of natural resilience. During its massive flowering, it provides essential food (nectar and pollen) for bees, butterflies, and pollinating birds, maintaining the balance of local ecosystems.">
+                            El <strong>Cañaguate</strong> (Handroanthus chrysanthus) es un símbolo de resiliencia
+                            natural. Durante su floración masiva, provee alimento esencial (néctar y polen) para abejas,
+                            mariposas y aves polinizadoras, manteniendo el equilibrio de los ecosistemas locales.
+                        </p>
+                    </div>
+                    <div class="mt-6 bg-green-50 p-4 rounded-2xl border border-green-200">
+                        <span class="text-xs font-bold text-green-700 block" data-es="💡 Dato Clave:"
+                            data-en="💡 Key Fact:">💡 Dato Clave:</span>
+                        <span class="text-xs text-gray-600"
+                            data-es="Sus raíces profundas ayudan a fijar el suelo, previniendo la erosión en épocas de fuertes lluvias."
+                            data-en="Its deep roots help fix the soil, preventing erosion during heavy rains.">Sus
+                            raíces profundas ayudan a fijar el suelo, previniendo la erosión en épocas de fuertes
+                            lluvias.</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-green-50/95 backdrop-blur-sm border-4 border-yellow-400 rounded-3xl p-8 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="text-3xl">🌍</span>
+                            <h4 class="text-xl font-bold text-green-900" data-es="Impacto en el Medio Ambiente"
+                                data-en="Impact on the Environment">Impacto en el Medio Ambiente</h4>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed"
+                            data-es="Frente al cambio climático y la deforestación, la reforestación con especies nativas como el Cañaguate recupera microclimas, regula la temperatura ambiental y aumenta la retención de humedad en suelos degradados."
+                            data-en="Facing climate change and deforestation, reforestation with native species like Cañaguate restores microclimates, regulates environmental temperature, and increases moisture retention in degraded soils.">
+                            Frente al cambio climático y la deforestación, la reforestación con especies nativas como el
+                            Cañaguate recupera microclimas, regula la temperatura ambiental y aumenta la retención de
+                            humedad en suelos degradados.
+                        </p>
+                    </div>
+                    <div class="mt-6 bg-yellow-50 p-4 rounded-2xl border border-yellow-200">
+                        <span class="text-xs font-bold text-yellow-800 block" data-es="🌱 Nuestro Aporte (Grado 2°A):"
+                            data-en="🌱 Our Contribution (Grade 2°A):">🌱 Nuestro Aporte (Grado 2°A):</span>
+                        <span class="text-xs text-gray-600"
+                            data-es="A través de las Bombas de Vida facilitamos su siembra masiva y efectiva en zonas vulnerables."
+                            data-en="Through Life Bombs we facilitate their massive and effective planting in vulnerable areas.">A
+                            través de las Bombas de Vida facilitamos su siembra masiva y efectiva en zonas
+                            vulnerables.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="juego"
+            class="py-12 px-4 bg-green-900/90 backdrop-blur-md text-white border-y border-green-700 transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
-                <h3 class="text-3xl font-black mb-2 text-yellow-300" data-es="🎮 Minijuego: ¡Apunta y Revierte la Sequía!" data-en="🎮 Minigame: Aim and Reverse Drought!">🎮 Minijuego: ¡Apunta y Revierte la Sequía!</h3>
-                <p class="text-green-100 mb-6 text-sm" data-es="Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo." data-en="Click quickly on the moving target to throw the bomb and bring life back to the soil.">Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo.</p>
+                <h3 class="text-3xl font-black mb-2 text-yellow-300"
+                    data-es="🎮 Minijuego: ¡Apunta y Revierte la Sequía!"
+                    data-en="🎮 Minigame: Aim and Reverse Drought!">🎮 Minijuego: ¡Apunta y Revierte la Sequía!</h3>
+                <p class="text-green-100 mb-6 text-sm"
+                    data-es="Haz clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo."
+                    data-en="Click quickly on the moving target to throw the bomb and bring life back to the soil.">Haz
+                    clic rápidamente en el objetivo móvil para lanzar la bomba y devolverle la vida al suelo.</p>
 
                 <div class="bg-green-950 border-4 border-yellow-400 rounded-3xl p-6 shadow-2xl">
                     <div class="mb-6 bg-green-900 px-6 py-4 rounded-2xl border border-green-700">
                         <div class="flex justify-between items-center mb-2">
-                            <span class="text-xs font-bold text-green-200" data-es="Progreso de Restauración del Suelo" data-en="Soil Restoration Progress">Progreso de Restauración del Suelo</span>
+                            <span class="text-xs font-bold text-green-200" data-es="Progreso de Restauración del Suelo"
+                                data-en="Soil Restoration Progress">Progreso de Restauración del Suelo</span>
                             <span id="porcentaje-texto" class="text-yellow-300 font-black">0%</span>
                         </div>
                         <div class="w-full bg-black/50 rounded-full h-5 overflow-hidden border border-green-600">
-                            <div id="barra-progreso" class="bg-yellow-400 h-full transition-all duration-300" style="width: 0%"></div>
+                            <div id="barra-progreso" class="bg-yellow-400 h-full transition-all duration-300"
+                                style="width: 0%"></div>
                         </div>
                     </div>
 
-                    <div id="campo-objetivo" class="h-64 bg-amber-950/80 border-4 border-dashed border-amber-500 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center">
-                        <div id="info-terreno" class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 pointer-events-none p-4 z-10">
+                    <div id="campo-objetivo"
+                        class="h-64 bg-amber-950/80 border-4 border-dashed border-amber-500 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center">
+                        <div id="info-terreno"
+                            class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 pointer-events-none p-4 z-10">
                             <span id="icono-suelo" class="text-5xl mb-2">🏜️</span>
-                            <p id="mensaje-suelo" class="font-bold text-amber-200 text-sm text-center" data-es="¡Haz clic en 'Iniciar Juego' para comenzar a apuntar!" data-en="Click 'Start Game' to start aiming!">¡Haz clic en 'Iniciar Juego' para comenzar a apuntar!</p>
+                            <p id="mensaje-suelo" class="font-bold text-amber-200 text-sm text-center"
+                                data-es="¡Haz clic en 'Iniciar Juego' para comenzar a apuntar!"
+                                data-en="Click 'Start Game' to start aiming!">¡Haz clic en 'Iniciar Juego' para comenzar
+                                a apuntar!</p>
                         </div>
 
-                        <div id="blanco-movil" onclick="marcarAcierto(event)" class="hidden absolute w-16 h-16 bg-yellow-400 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-2xl cursor-pointer transform hover:scale-110 transition animate-bounce z-20">
+                        <div id="blanco-movil" onclick="marcarAcierto(event)"
+                            class="hidden absolute w-16 h-16 bg-yellow-400 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-2xl cursor-pointer transform hover:scale-110 transition animate-bounce z-20">
                             🎯
                         </div>
                     </div>
 
                     <div class="mt-6 flex justify-center gap-4">
-                        <button id="btn-iniciar-juego" onclick="iniciarMinijuego()" class="bg-yellow-400 hover:bg-yellow-300 text-yellow-950 font-black py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 cursor-pointer text-lg" data-es="🚀 Iniciar Juego" data-en="🚀 Start Game">
+                        <button id="btn-iniciar-juego" onclick="iniciarMinijuego()"
+                            class="bg-yellow-400 hover:bg-yellow-300 text-yellow-950 font-black py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 cursor-pointer text-lg"
+                            data-es="🚀 Iniciar Juego" data-en="🚀 Start Game">
                             🚀 Iniciar Juego
                         </button>
                     </div>
@@ -184,15 +345,21 @@
 
         <section id="crecimiento" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
-                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="📸 Bitácora de Crecimiento" data-en="📸 Growth Logbook">📸 Bitácora de Crecimiento</h3>
-                <p class="text-gray-500 mb-8 text-sm" data-es="Recorrido fotográfico del proceso de elaboración y germinación" data-en="Photographic journey of the preparation and germination process">Recorrido fotográfico del proceso de elaboración y germinación</p>
-                
+                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="📸 Bitácora de Crecimiento"
+                    data-en="📸 Growth Logbook">📸 Bitácora de Crecimiento</h3>
+                <p class="text-gray-500 mb-8 text-sm"
+                    data-es="Recorrido fotográfico del proceso de elaboración y germinación"
+                    data-en="Photographic journey of the preparation and germination process">Recorrido fotográfico del
+                    proceso de elaboración y germinación</p>
+
                 <div class="relative bg-green-50 border-4 border-green-300 rounded-3xl shadow-xl overflow-hidden p-6">
-                    <div class="absolute top-4 left-4 bg-green-600 text-white font-black px-3 py-1 rounded-full text-xs shadow z-10">
+                    <div
+                        class="absolute top-4 left-4 bg-green-600 text-white font-black px-3 py-1 rounded-full text-xs shadow z-10">
                         <span id="carrusel-numero">1</span> / <span id="carrusel-total">4</span>
                     </div>
 
-                    <div id="carrusel-contenedor-foto" class="h-64 md:h-80 bg-green-200 rounded-2xl flex items-center justify-center shadow-inner mb-4 transition-all duration-300 overflow-hidden">
+                    <div id="carrusel-contenedor-foto"
+                        class="h-64 md:h-80 bg-green-200 rounded-2xl flex items-center justify-center shadow-inner mb-4 transition-all duration-300 overflow-hidden">
                         <span class="text-6xl">📷</span>
                     </div>
 
@@ -202,10 +369,14 @@
                     </div>
 
                     <div class="flex justify-between items-center mt-6 px-4">
-                        <button onclick="cambiarSlide(-1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition transform hover:scale-105 cursor-pointer" data-es="⬅️ Anterior" data-en="⬅️ Previous">
+                        <button onclick="cambiarSlide(-1)"
+                            class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition transform hover:scale-105 cursor-pointer"
+                            data-es="⬅️ Anterior" data-en="⬅️ Previous">
                             ⬅️ Anterior
                         </button>
-                        <button onclick="cambiarSlide(1)" class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition transform hover:scale-105 cursor-pointer" data-es="Siguiente ➡️" data-en="Next ➡️">
+                        <button onclick="cambiarSlide(1)"
+                            class="bg-green-600 hover:bg-green-700 text-white font-black px-5 py-2 rounded-full shadow transition transform hover:scale-105 cursor-pointer"
+                            data-es="Siguiente ➡️" data-en="Next ➡️">
                             Siguiente ➡️
                         </button>
                     </div>
@@ -215,28 +386,44 @@
 
         <section id="descargas" class="py-12 px-4 transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
-                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="📥 Descargas del Proyecto (PDF)" data-en="📥 Project Downloads (PDF)">📥 Descargas del Proyecto (PDF)</h3>
-                <p class="text-green-200 mb-8 text-sm" data-es="Obtén el documento oficial de la investigación en tu idioma preferido" data-en="Get the official research document in your preferred language">Obtén el documento oficial de la investigación en tu idioma preferido</p>
+                <h3 class="text-3xl font-black text-white drop-shadow mb-2" data-es="📥 Descargas del Proyecto (PDF)"
+                    data-en="📥 Project Downloads (PDF)">📥 Descargas del Proyecto (PDF)</h3>
+                <p class="text-green-200 mb-8 text-sm"
+                    data-es="Obtén el documento oficial de la investigación en tu idioma preferido"
+                    data-en="Get the official research document in your preferred language">Obtén el documento oficial
+                    de la investigación en tu idioma preferido</p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <a href="./docs/ExpoReporte_Espanol.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition transform hover:-translate-y-1 flex flex-col items-center group">
-                        <span class="text-3xl mb-2 font-black text-green-700 bg-green-100 px-3 py-1 rounded-full text-xs">ES</span>
-                        <h4 class="font-bold text-green-800 text-lg group-hover:underline" data-es="Versión en Español (PDF)" data-en="Spanish Version (PDF)">Versión en Español (PDF)</h4>
-                        <p class="text-xs text-gray-500 mt-1" data-es="Documento oficial de investigación" data-en="Official research document">Documento oficial de investigación</p>
+                    <a href="./docs/ExpoReporte_Espanol.pdf" download
+                        class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition transform hover:-translate-y-1 flex flex-col items-center group">
+                        <span
+                            class="text-3xl mb-2 font-black text-green-700 bg-green-100 px-3 py-1 rounded-full text-xs">ES</span>
+                        <h4 class="font-bold text-green-800 text-lg group-hover:underline"
+                            data-es="Versión en Español (PDF)" data-en="Spanish Version (PDF)">Versión en Español (PDF)
+                        </h4>
+                        <p class="text-xs text-gray-500 mt-1" data-es="Documento oficial de investigación"
+                            data-en="Official research document">Documento oficial de investigación</p>
                     </a>
 
-                    <a href="./docs/ExpoReporte_English.pdf" download class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition transform hover:-translate-y-1 flex flex-col items-center group">
-                        <span class="text-3xl mb-2 font-black text-green-700 bg-green-100 px-3 py-1 rounded-full text-xs">EN</span>
-                        <h4 class="font-bold text-green-800 text-lg group-hover:underline" data-es="Versión en Inglés (PDF)" data-en="English Version (PDF)">Versión en Inglés (PDF)</h4>
-                        <p class="text-xs text-gray-500 mt-1" data-es="Documento oficial de investigación" data-en="Official research document">Documento oficial de investigación</p>
+                    <a href="./docs/ExpoReporte_English.pdf" download
+                        class="bg-white/95 backdrop-blur-sm border-2 border-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-50 transition transform hover:-translate-y-1 flex flex-col items-center group">
+                        <span
+                            class="text-3xl mb-2 font-black text-green-700 bg-green-100 px-3 py-1 rounded-full text-xs">EN</span>
+                        <h4 class="font-bold text-green-800 text-lg group-hover:underline"
+                            data-es="Versión en Inglés (PDF)" data-en="English Version (PDF)">Versión en Inglés (PDF)
+                        </h4>
+                        <p class="text-xs text-gray-500 mt-1" data-es="Documento oficial de investigación"
+                            data-en="Official research document">Documento oficial de investigación</p>
                     </a>
                 </div>
             </div>
         </section>
 
         <footer class="bg-green-950 text-center py-6 text-green-200 border-t border-green-900">
-            <p class="font-bold text-md" data-es="Colegio La Nueva Esperanza - Grado 2°A" data-en="Colegio La Nueva Esperanza - Grade 2°A">Colegio La Nueva Esperanza - Grado 2°A</p>
-            <p class="text-xs mt-1 opacity-75" data-es="ExpoCiencia 2026 Jaime Lora Jaramillo" data-en="ExpoScience 2026 Jaime Lora Jaramillo">ExpoCiencia 2026 Jaime Lora Jaramillo</p>
+            <p class="font-bold text-md" data-es="Colegio La Nueva Esperanza - Grado 2°A"
+                data-en="Colegio La Nueva Esperanza - Grade 2°A">Colegio La Nueva Esperanza - Grado 2°A</p>
+            <p class="text-xs mt-1 opacity-75" data-es="ExpoCiencia 2026 Jaime Lora Jaramillo"
+                data-en="ExpoScience 2026 Jaime Lora Jaramillo">ExpoCiencia 2026 Jaime Lora Jaramillo</p>
         </footer>
 
     </div>
@@ -245,9 +432,9 @@
         let idiomaActual = 'es';
 
         const etapasMinijuego = [
-            { umbral: 0,   img: null },
-            { umbral: 40,  img: null },
-            { umbral: 80,  img: null }
+            { umbral: 0, img: null },
+            { umbral: 40, img: null },
+            { umbral: 80, img: null }
         ];
 
         let progresoSuelo = 0;
@@ -272,13 +459,13 @@
         function moverBlancoAleatorio() {
             const campo = document.getElementById('campo-objetivo');
             const blanco = document.getElementById('blanco-movil');
-            
+
             const maxX = campo.clientWidth - 80;
             const maxY = campo.clientHeight - 80;
-            
+
             const randomX = Math.floor(Math.random() * Math.max(10, maxX));
             const randomY = Math.floor(Math.random() * Math.max(10, maxY));
-            
+
             blanco.style.left = randomX + 'px';
             blanco.style.top = randomY + 'px';
             blanco.style.position = 'absolute';
@@ -329,11 +516,11 @@
             juegoActivo = false;
             clearInterval(intervaloBlanco);
             document.getElementById('blanco-movil').classList.add('hidden');
-            
+
             const infoTerreno = document.getElementById('info-terreno');
             infoTerreno.classList.remove('hidden');
             document.getElementById('icono-suelo').textContent = '🌳🌼✨';
-            
+
             const mensajeSuelo = document.getElementById('mensaje-suelo');
             mensajeSuelo.textContent = idiomaActual === 'es' ? '¡Increíble! Has reforestado y recuperado el 100% del suelo con Cañaguates.' : 'Amazing! You have reforested and recovered 100% of the soil with Cañaguates.';
 
@@ -375,7 +562,7 @@
             const slideActual = slides[indiceSlide];
             document.getElementById('carrusel-numero').textContent = indiceSlide + 1;
             document.getElementById('carrusel-total').textContent = slides.length;
-            
+
             const contenedorFoto = document.getElementById('carrusel-contenedor-foto');
             const tituloEl = document.getElementById('carrusel-titulo');
             const descEl = document.getElementById('carrusel-desc');
@@ -408,7 +595,7 @@
         function cambiarIdioma() {
             idiomaActual = idiomaActual === 'es' ? 'en' : 'es';
             document.getElementById('html-root').lang = idiomaActual;
-            
+
             const elementos = document.querySelectorAll('[data-es]');
             elementos.forEach(el => {
                 if (idiomaActual === 'en') {
@@ -429,4 +616,5 @@
         });
     </script>
 </body>
+
 </html>
