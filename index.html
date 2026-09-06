@@ -17,7 +17,7 @@
 <body class="text-gray-800 relative bg-green-950">
 
     <div class="fixed inset-0 z-0 opacity-15 bg-cover bg-center pointer-events-none"
-        style="background-image: url('./assets/img/fondo.jpg');"></div>
+        style="background-image: url('./assets/img/fondo/flor.jpg');"></div>
 
     <div class="relative z-10">
 
@@ -55,7 +55,7 @@
                         <li><a href="#juego"
                                 class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
                                 data-es="Minijuego" data-en="Minigame">Minijuego</a></li>
-                        <li><a href="#crecimiento"
+                        <li><a href="#bitacora"
                                 class="hover:text-yellow-300 transition duration-300 transform hover:scale-105 inline-block"
                                 data-es="Bitácora" data-en="Logbook">Bitácora</a></li>
                         <li><a href="#descargas"
@@ -97,9 +97,9 @@
                         class="bg-green-50 p-6 rounded-3xl border-2 border-green-200 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col items-center">
                         <div
                             class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
-                            <img src="./assets/img/miembros/eliad.jpg" alt="Eliad" class="w-full h-full object-cover">
+                            <img src="./assets/img/miembros/elias.jpg" alt="Elias" class="w-full h-full object-cover">
                         </div>
-                        <h4 class="font-bold text-green-900 text-sm mt-1">Espinosa Ochoa Eliad David</h4>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Figueroa Ochoa Elias</h4>
                     </div>
 
                     <div
@@ -108,7 +108,7 @@
                             class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="./assets/img/miembros/kamila.jpg" alt="Kamila" class="w-full h-full object-cover">
                         </div>
-                        <h4 class="font-bold text-green-900 text-sm mt-1">Mendoza Tom Kamila Sofia</h4>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Mendoza Tom Kamila</h4>
                     </div>
 
                     <div
@@ -117,7 +117,7 @@
                             class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="./assets/img/miembros/lucia.jpg" alt="Lucia" class="w-full h-full object-cover">
                         </div>
-                        <h4 class="font-bold text-green-900 text-sm mt-1">Muños Madrid Lucia</h4>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Muños Madrid Lucía</h4>
                     </div>
 
                     <div
@@ -126,7 +126,7 @@
                             class="w-28 h-28 bg-green-200 rounded-full overflow-hidden mb-4 shadow-inner border-4 border-white flex items-center justify-center text-3xl">
                             <img src="./assets/img/miembros/samuel.jpg" alt="Samuel" class="w-full h-full object-cover">
                         </div>
-                        <h4 class="font-bold text-green-900 text-sm mt-1">Rodrigues Goez Samuel David</h4>
+                        <h4 class="font-bold text-green-900 text-sm mt-1">Rodrigues Goez Samuel</h4>
                     </div>
 
                     <div
@@ -346,14 +346,13 @@
             </div>
         </section>
 
-        <section id="crecimiento" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner transition duration-500">
+        <section id="bitacora" class="py-12 px-4 bg-white/95 backdrop-blur-sm shadow-inner transition duration-500">
             <div class="container mx-auto max-w-3xl text-center">
-                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="📸 Bitácora de Crecimiento"
-                    data-en="📸 Growth Logbook">📸 Bitácora de Crecimiento</h3>
+                <h3 class="text-3xl font-black text-green-700 mb-2" data-es="📸 Bitácora"
+                    data-en="📸 Growth Logbook">📸 Bitácora</h3>
                 <p class="text-gray-500 mb-8 text-sm"
-                    data-es="Recorrido fotográfico del proceso de elaboración y germinación"
-                    data-en="Photographic journey of the preparation and germination process">Recorrido fotográfico del
-                    proceso de elaboración y germinación</p>
+                    data-es="Recorrido fotográfico del proceso"
+                    data-en="Photographic journey of the process">Recorrido fotográfico del proceso</p>
 
                 <div class="relative bg-green-50 border-4 border-green-300 rounded-3xl shadow-xl overflow-hidden p-6">
                     <div
@@ -536,29 +535,41 @@
 
         const slides = [
             {
-                img: null,
-                esTitulo: 'Fase 1: Recolección y Mezcla',
-                enTitulo: 'Phase 1: Collection & Mixture',
-                esDesc: 'Combinación exacta de arcilla natural, tierra fértil y abono orgánico para proteger la semilla.'
+                img: './assets/img/bitacora/IMG_1.jpg',
+                esTitulo: 'Observación de Materiales para las Bombas de Vida',
+                enTitulo: 'Observation of Materials for Seed Bombs',
+                esDesc: 'Los estudiantes examinan en equipo la mezcla inicial de arcilla natural, tierra fértil y abono orgánico antes de comenzar a fabricar las esferas',
+                enDesc: 'The students examine the initial mixture of natural clay, fertile soil, and organic fertilizer as a team before they begin manufacturing the spheres.'
             },
             {
-                img: null,
-                esTitulo: 'Fase 2: Elaboración de las Bombas',
-                enTitulo: 'Phase 2: Crafting the Bombs',
-                esDesc: 'Moldeado esférico de las bombas de vida asegurando la compactación adecuada.'
+                img: './assets/img/bitacora/IMG_2.jpg',
+                esTitulo: 'Preparación del Sustrato Base',
+                enTitulo: 'Preparation of the Base Substrate',
+                esDesc: 'Una estudiante muestra en sus manos la mezcla de arcilla y tierra, la cual retendrá la humedad necesaria para la posterior germinación de las semillas de cañaguate',
+                enDesc: 'A student shows the clay and soil mixture in her hands, which will retain the necessary moisture for the subsequent germination of the Cañaguate seeds.'
             },
             {
-                img: null,
-                esTitulo: 'Fase 3: Secado Natural',
-                enTitulo: 'Phase 3: Natural Drying',
-                esDesc: 'Pruebas de resistencia al impacto tras varios días de secado natural al sol.'
+                img: './assets/img/bitacora/IMG_3.jpg',
+                esTitulo: 'Modelado en Equipo de las Bombas de Vida',
+                enTitulo: 'Team Modeling of the Seed Bombs',
+                esDesc: 'El grupo de trabajo colabora activamente moldeando las esferas de tierra, un proceso de ingeniería diseñado para integrar las semillas en el núcleo de la bomba.',
+                enDesc: 'The working group actively collaborates on molding the soil spheres, an engineering process designed to integrate the seeds into the core of the bomb.'
             },
             {
-                img: null,
-                esTitulo: 'Fase 4: Germinación y Brotes',
-                enTitulo: 'Phase 4: Germination & Sprouts',
-                esDesc: 'Evolución y surgimiento de los primeros brotes nativos de Cañaguate.'
+                img: './assets/img/bitacora/IMG_4.jpg',
+                esTitulo: 'Creación del Núcleo Protector',
+                enTitulo: 'Creation of the Protective Core',
+                esDesc: 'Una estudiante da forma cuidadosamente a la esfera de arcilla, cuyo propósito es proteger las semillas de la deshidratación y los depredadores naturales en suelos degradados.',
+                enDesc: 'A student carefully shapes the clay sphere, whose purpose is to protect the seeds from dehydration and natural predators in degraded soils.'
+            },
+            {
+                img: './assets/img/bitacora/IMG_5.mp4',
+                esTitulo: 'En Acción: Dando Forma a las Bombas de Vida',
+                enTitulo: 'In Action: Shaping the Seed Bombs',
+                esDesc: 'Un breve recorrido en video que captura la dinámica y el trabajo en equipo de los estudiantes mientras amasan y moldean las esferas. Se observa el proceso práctico de ingeniería donde integran la arcilla, la tierra y el abono, asegurando la consistencia perfecta para proteger las semillas de cañaguate.',
+                enDesc: 'A short video walkthrough capturing the dynamics and teamwork of the students as they knead and mold the spheres. It shows the hands-on engineering process where they integrate clay, soil, and fertilizer, ensuring the perfect consistency to protect the Cañaguate seeds.'
             }
+
         ];
 
         let indiceSlide = 0;
@@ -573,7 +584,11 @@
             const descEl = document.getElementById('carrusel-desc');
 
             if (slideActual.img) {
-                contenedorFoto.innerHTML = `<img src="${slideActual.img}" alt="Foto bitácora" class="w-full h-full object-cover">`;
+                if (slideActual.img.endsWith('.mp4')) {
+                    contenedorFoto.innerHTML = `<video src="${slideActual.img}" class="w-full h-full object-cover" controls autoplay muted loop></video>`;
+                } else {
+                    contenedorFoto.innerHTML = `<img src="${slideActual.img}" alt="Foto bitácora" class="w-full h-full object-cover">`;
+                }
             } else {
                 contenedorFoto.innerHTML = `<div class="flex flex-col items-center justify-center text-green-700"><span class="text-6xl mb-1">📷</span><span class="text-xs font-bold opacity-75">Espacio para Foto ${indiceSlide + 1}</span></div>`;
             }
