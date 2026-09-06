@@ -436,9 +436,11 @@
         let idiomaActual = 'es';
 
         const etapasMinijuego = [
-            { umbral: 0, img: null },
-            { umbral: 40, img: null },
-            { umbral: 80, img: null }
+            { umbral: 0, img: './assets/img/juego/fondo1.jpg' },
+            { umbral: 20, img: './assets/img/juego/fondo2.jpg' },
+            { umbral: 40, img: './assets/img/juego/fondo3.jpg' },
+            { umbral: 60, img: './assets/img/juego/fondo4.jpg' },
+            { umbral: 80, img: './assets/img/juego/fondo5.jpg' }
         ];
 
         let progresoSuelo = 0;
@@ -498,12 +500,18 @@
             barra.style.width = progresoSuelo + '%';
             textoPorcentaje.textContent = progresoSuelo + '%';
 
+            // Determinar en qué etapa estamos según el progreso
             let etapaActual = etapasMinijuego[0];
-            if (progresoSuelo >= 80) etapaActual = etapasMinijuego[2];
-            else if (progresoSuelo >= 40) etapaActual = etapasMinijuego[1];
+            if (progresoSuelo >= 80) etapaActual = etapasMinijuego[4];
+            else if (progresoSuelo >= 60) etapaActual = etapasMinijuego[3];
+            else if (progresoSuelo >= 40) etapaActual = etapasMinijuego[2];
+            else if (progresoSuelo >= 20) etapaActual = etapasMinijuego[1];
 
+            // Aplicar la imagen de fondo de la etapa actual
             if (etapaActual.img) {
                 campo.style.backgroundImage = `url('${etapaActual.img}')`;
+                // Mantenemos las clases base pero removemos los fondos de color para que se vea bien la imagen
+                campo.className = "h-64 border-4 border-solid border-green-500 relative overflow-hidden cursor-crosshair flex items-center justify-center transition-all duration-500 bg-cover bg-center";
             } else {
                 campo.style.backgroundImage = 'none';
                 if (progresoSuelo <= 30) {
